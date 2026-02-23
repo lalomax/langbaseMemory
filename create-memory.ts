@@ -9,7 +9,7 @@ async function main() {
 	const memory = await langbase.memories.create({
 		name: 'knowledge-baseiL',
 		description: '',
-		embedding_model: 'cohere:embed-multilingual-light-v3.0'
+		embedding_model: 'gemma-3-27b-it-q4_0' as any
 	})
 	console.log("memory", memory)
 }
